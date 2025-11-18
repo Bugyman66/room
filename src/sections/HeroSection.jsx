@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import Button from '../components/Button';
+import logo from '../assets/logo.svg';
 
 const HeroSection = () => {
   return (
@@ -103,7 +104,7 @@ const HeroSection = () => {
           className="mb-6 md:mb-8"
         >
           <motion.img
-            src="/src/assets/logo.svg"
+            src={logo}
             alt="APTOS ROOM Logo"
             className="w-24 h-24 md:w-32 md:h-32 mx-auto mb-6 md:mb-8 filter drop-shadow-[0_0_10px_rgba(0,229,255,0.8)]"
             animate={{ 
@@ -131,7 +132,17 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center px-4"
         >
-
+          <Link
+            to="quest-preview"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer w-full sm:w-auto"
+          >
+            <Button variant="primary" className="w-full">
+              Explore Bounties
+            </Button>
+          </Link>
+          
           <Link
             to="community"
             smooth={true}

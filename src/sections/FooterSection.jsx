@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import logo from '../assets/logo.svg';
 
 const FooterSection = () => {
   return (
@@ -13,7 +14,7 @@ const FooterSection = () => {
             className="mb-6 md:mb-0 text-center md:text-left"
           >
             <div className="flex items-center justify-center md:justify-start">
-              <img src="/src/assets/logo.svg" alt="APTOS ROOM Logo" className="w-8 h-8 md:w-10 md:h-10 mr-2 md:mr-3" />
+              <img src={logo} alt="APTOS ROOM Logo" className="w-8 h-8 md:w-10 md:h-10 mr-2 md:mr-3" />
               <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-aptos-cyan to-aptos-blue bg-clip-text text-transparent">
                 APTOS ROOM
               </span>
