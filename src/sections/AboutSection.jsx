@@ -15,7 +15,7 @@ const AboutSection = () => {
           <motion.h2 variants={textVariant} className="section-title">What is APTOS ROOM</motion.h2>
           <motion.div variants={textVariant} className="w-16 h-1 bg-aptos-cyan mx-auto mb-6 md:mb-8"></motion.div>
           <motion.p variants={textVariant} className="section-subtitle">
-            A revolutionary platform transforming how Web3 contributors connect with projects through decentralized bounties and quests.
+           APTOS ROOM is more than just a platform—it's a thriving ecosystem where Web3 builders, developers, designers, and creators converge to contribute their talents to meaningful projects while earning rewards in a trustless environment.
           </motion.p>
         </motion.div>
 
@@ -75,7 +75,7 @@ const AboutSection = () => {
           className="mt-12 md:mt-16 text-center"
         >
           <p className="text-base md:text-xl text-gray-300 px-4">
-            APTOS ROOM is more than just a platform—it's a thriving ecosystem where Web3 builders, developers, designers, and creators converge to contribute their talents to meaningful projects while earning rewards in a trustless environment.
+             A revolutionary platform transforming how Web3 contributors connect with projects through decentralized bounties and quests.
           </p>
         </motion.div>
       </div>
