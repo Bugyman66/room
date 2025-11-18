@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass-card {
+    @apply bg-aptos-dark/30 backdrop-blur-lg border border-aptos-cyan/30 rounded-xl overflow-hidden transition-all duration-300 hover:border-aptos-cyan/50;
+  }
+  
+  .neon-button {
+    @apply px-6 py-3 rounded-full font-medium transition-all duration-300 bg-transparent border-2 border-aptos-cyan text-aptos-cyan hover:bg-aptos-cyan/10 hover:shadow-[0_0_15px_rgba(0,229,255,0.5)] hover:text-aptos-white;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-4 text-aptos-white;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-gray-300 text-center max-w-2xl mx-auto mb-12;
+  }
+  
+  .cyanglow-card {
+    @apply glass-card border-2 border-aptos-cyan relative overflow-hidden;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+  }
+  
+  .cyanglow-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(0, 229, 255, 0.1), transparent);
+    transform: rotate(45deg);
+    animation: sweep 3s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(90deg, #00E5FF, #0AD9FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
