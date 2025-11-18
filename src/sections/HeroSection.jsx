@@ -133,17 +133,6 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center px-4"
         >
           <Link
-            to="quest-preview"
-            smooth={true}
-            duration={500}
-            className="cursor-pointer w-full sm:w-auto"
-          >
-            <Button variant="primary" className="w-full">
-              Explore Bounties
-            </Button>
-          </Link>
-          
-          <Link
             to="community"
             smooth={true}
             duration={500}
