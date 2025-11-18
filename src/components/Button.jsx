@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const Button = ({ children, variant = 'primary', className = '', ...props }) => {
-  const baseClasses = 'px-6 py-3 rounded-full font-medium transition-all duration-300';
+  const baseClasses = 'px-4 py-2 md:px-6 md:py-3 rounded-full font-medium transition-all duration-300 text-sm md:text-base';
   
   const variants = {
     primary: 'bg-aptos-cyan text-aptos-black hover:bg-aptos-aqua hover:shadow-[0_0_20px_rgba(0,229,255,0.8)]',

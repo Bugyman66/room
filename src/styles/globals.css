@@ -12,11 +12,11 @@
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold text-center mb-4 text-aptos-white;
+    @apply text-2xl md:text-3xl font-bold text-center mb-4 text-aptos-white;
   }
   
   .section-subtitle {
-    @apply text-lg text-gray-300 text-center max-w-2xl mx-auto mb-12;
+    @apply text-base md:text-lg text-gray-300 text-center max-w-2xl mx-auto mb-8;
   }
   
   .cyanglow-card {
@@ -43,5 +43,20 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .section-title {
+    @apply text-xl;
+  }
+  
+  .section-subtitle {
+    @apply text-sm px-4;
+  }
+  
+  .neon-button {
+    @apply px-4 py-2 text-sm;
   }
 }
